@@ -1,9 +1,8 @@
 <template>
   <div class="event-card">
     <!-- Display data -->
-    <span>@ {{ event.time  }} on {{event.date}} </span>
+    <span>@ {{ event.time }} on {{ event.date }} </span>
     <h4>{{ event.title }}</h4>
-    
   </div>
 </template>
 
@@ -11,22 +10,7 @@
 export default {
   name: "EventCard",
   props: {
-    events: Object
-  },
-  data() {
-    return {
-      event: {
-        id: 1232452,
-        category: 'animal welfare',
-        title: 'Chi adoption day',
-        description: 'Get a chihuahua into your home',
-        location: 'Woof Park',
-        date: 'January 10, 2021',
-        time: '5:00',
-        petsAllowed: true,
-        organizer: 'Dulce'
-      }
-    }
+    event: { type: Object, required: true }
   }
 };
 </script>
