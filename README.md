@@ -1,4 +1,8 @@
-# dulce-vue
+# Vue Dulce Events
+
+Web app for charity events. Built with Vue.js
+
+You can look at the site live [here](https://vue-dulce-events.onrender.com/)
 
 ## Project setup
 ```
